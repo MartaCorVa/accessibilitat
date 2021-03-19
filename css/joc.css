@@ -1,0 +1,261 @@
+/* 
+-------------------------------------------------------------------------------
+                                MENÚ
+------------------------------------------------------------------------------
+*/
+
+nav>a>img {
+    width: 40px;
+    margin-left: 10px;
+}
+
+
+/* 
+-------------------------------------------------------------------------------
+                                    DIV TITOL
+------------------------------------------------------------------------------
+*/
+
+.titolSeccio {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgb(152, 153, 155);
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    color: white;
+}
+
+
+
+/* 
+-------------------------------------------------------------------------------
+                                    ZONA JOC
+------------------------------------------------------------------------------
+*/
+
+.fons {
+    padding-top: 40px;
+    background-color: rgb(152, 153, 155);
+}
+
+#zonaJoc {
+    font-size: 1rem;
+    font-family: 'Courier New', monospace;
+    color: white;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding-top: 10px;
+    margin-bottom: 40px;
+}
+
+#trailer {
+    width: 80%;
+    min-height: 400px;
+    margin-left: auto;
+    display: block;
+}
+
+#stardewImg {
+    width: 80%;
+    height: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+#stardewText {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    padding: 15px;
+    color: white;
+}
+
+
+
+
+
+/* 
+-------------------------------------------------------------------------------
+                                TAULES
+------------------------------------------------------------------------------
+*/
+
+thead {
+    color: white;
+    background-color: rgb(152, 153, 155);
+}
+
+
+
+
+
+/* 
+-------------------------------------------------------------------------------
+                                    CONTACTE
+------------------------------------------------------------------------------
+*/
+
+#contacte {
+    margin: auto;
+    background-color: rgb(152, 153, 155);
+}
+
+#formulari {
+    padding: 20px;
+}
+
+#formulari>div>div {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+
+/* 
+-------------------------------------------------------------------------------
+                                BOTONS
+------------------------------------------------------------------------------
+*/
+
+button {
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 10px;
+}
+
+
+
+/* 
+-------------------------------------------------------------------------------
+                                FOOTER
+------------------------------------------------------------------------------
+*/
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+/* 
+-------------------------------------------------------------------------------
+                    BOTÓ PER ANAR AL TOP DE LA PÁGINA
+------------------------------------------------------------------------------
+*/
+.scroll-to-top {
+    padding: 5px;
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    font-weight: bold;
+    width: 50px;
+    font-size: 0.8em;
+    text-align: center;
+    display: none;
+}
+
+.scroll-to-top:hover {
+    color: rgba(65, 56, 56, 0.329);
+}
+
+
+
+
+/* 
+    ICONA
+*/
+.flecha {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid;
+    transform: scale(var(--ggs,1));
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.418);
+    color: black;
+}
+
+.flecha::after,
+.flecha::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 7px
+}
+.flecha::after {
+    width: 15px;
+    height: 15px;
+    border-top: 4px solid;
+    border-left: 4px solid;
+    transform: rotate(45deg);
+    left: 11px
+}
+.flecha::before {
+    width: 4px;
+    height: 25px;
+    left: 16px;
+    background: currentColor
+}
+
+
+
+
+/* 
+-------------------------------------------------------------------------------
+                                MEDIA
+------------------------------------------------------------------------------
+*/
+
+@media only screen and (max-width:767px) {
+    #zonaJoc {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        background-color: rgb(152, 153, 155);
+    }
+    
+    #trailer {
+        width: 80%;
+        min-height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    #stardewImg {
+        width: 80%;
+    }
+    
+    #stardewText {
+        text-align: left;
+        min-height: 650px;
+        width: 80%;
+        color: white;
+    }
+}
+
+@media only screen and (max-width:1221px) {
+    #infoAdicional {
+        min-height: 700px;
+    }
+    #infoAdicional>img {
+        max-height: 200px;
+    }
+}
+
+
+
+.ocult  {
+    display: none;
+}

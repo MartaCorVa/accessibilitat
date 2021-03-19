@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icons css.gg  https://css.gg/app -->
+    <link href='https://css.gg/css' rel='stylesheet'>
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/joc.js"></script>
+
+    <!-- CSS PROPI -->
+    <link rel="stylesheet" href="css/joc.css" />
+
+    <!-- TÍTOL -->
+    <title>Stardew Valley - Accessibilitat Web</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <!-- LOGO -->
+            <a tabindex = "1" class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="logo">
+            </a>
+
+            <!-- NAVEGACIÓ -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a tabindex = "2" class="nav-link" href="index.html">Inici</a>
+                </li>
+                <li class="nav-item">
+                    <a tabindex = "3" class="nav-link" href="tenda.html">Tenda</a>
+                </li>
+                <li class="nav-item">
+                    <a tabindex = "4" class="nav-link" href="joc.html">Joc</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1 tabindex = "5" class="titolSeccio">Stardew Valley</h1>
+            <div id="zonaJoc" class="row">
+                <!-- TRAILER DEL JOC -->
+                <article class="col-md-6 fons">
+                    <h2 tabindex = "6">Trailer</h2>
+                    <iframe title="trailer" tabindex = "7" id="trailer" src="https://www.youtube.com/embed/-iRu3wtBtVw" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </article>
+    
+                <!-- IMATGE I RESUM DEL JOC -->
+                <article id="infoAdicional" class="col-md-6 fons">
+                    <h2 tabindex = "8" >Informació adicional</h2>
+                    <img id="stardewImg"
+                        src="https://cdn.cloudflare.steamstatic.com/steam/apps/413150/capsule_616x353.jpg?t=1608624324"
+                        alt="Stardew Valley">
+    
+                    <p id="stardewText">
+                        Acabes d'heretar la vella parcel·la agrícola del teu padrí de Stardew Valley.
+                        Decideixes partir cap a una nova vida amb unes eines i pocs doblers.
+                        Et veus capaç de viure de la terra i convertir aquests camps descurats en
+                        una llar pròspera?
+                        <br><br>
+                        Data de llançament: 16 FEB 2016
+                        <br>
+                        Desenvolupador: ConcernedApe
+                    </p>
+                </article>
+            </div>
+            
+        </section>
+
+        <!-- TAULA AMB LES CARACTERÍSTIQUES DEL JOC -->
+        <section class="table-responsive-sm">
+            <h2 tabindex = "9" class="titolSeccio">Característiques</h2>
+            <table class="table table-striped">
+                <caption>Característiques del Joc</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Característiques</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Modes de Joc</th>
+                        <td headers="Modes de Joc">Un Jugador</td>
+                        <td headers="Modes de Joc">Cooperatiu en línia</td>
+                        <td headers="Modes de Joc">Cooperatiu en LAN</td>
+                        <td headers="Modes de Joc">Cooperatiu amb pantalla dividida</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Compatibilitat</th>
+                        <td headers="Compatibilitat">Compatibilitat total amb comandament</td>
+                        <td headers="Compatibilitat">Steam Cloud</td>
+                        <td headers="Compatibilitat">Remote Play amb tablet i mòbil</td>
+                        <td headers="Buit"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Col·leccionables</th>
+                        <td headers="Col·leccionables">Assoliments de Steam</td>
+                        <td headers="Col·leccionables">Cromos de Steam</td>
+                        <td headers="Buit"></td>
+                        <td headers="Buit"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- TAULA AMB ELS IDIOMES DISPONIBLES -->
+        <section class="table-responsive-sm">
+            <h2 tabindex = "10" class="titolSeccio">Idiomes</h2>
+            <table class="table table-striped">
+                <caption>Idiomes del Joc</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Idiomes</th>
+                        <th scope="col">Interfície</th>
+                        <th scope="col">Veus</th>
+                        <th scope="col">Subtítols</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Espanyol</th>
+                        <td headers="Interfície">Si</td>
+                        <td headers="Veus">No</td>
+                        <td headers="Subtítols">No</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Anglès</th>
+                        <td headers="Interfície">Si</td>
+                        <td headers="Veus">No</td>
+                        <td headers="Subtítols">No</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Alemany</th>
+                        <td headers="Interfície">Si</td>
+                        <td headers="Veus">No</td>
+                        <td headers="Subtítols">No</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Japonès</th>
+                        <td headers="Interfície">Si</td>
+                        <td headers="Veus">No</td>
+                        <td headers="Subtítols">No</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Portuguès</th>
+                        <td headers="Interfície">Si</td>
+                        <td headers="Veus">No</td>
+                        <td headers="Subtítols">No</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- FORMULARI DE CONTACTE -->
+        <section id="contacte">
+            <h2 tabindex = "11" class="titolSeccio">Contacte</h2>
+            <form id="formulari" action="#" class="container mx-auto">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <input title="Nom" tabindex = "12" type="text" class="form-control" placeholder="Nom" aria-label="Nom">
+                    </div>
+                    <div class="col-md-6">
+                        <input title="Llinatges" tabindex = "13" type="text" class="form-control" placeholder="Llinatges" aria-label="Llinatges">
+                    </div>
+                    <div class="col-md-12">
+                        <input title="Email" tabindex = "14" type="text" class="form-control" placeholder="Email" aria-label="Email">
+                    </div>
+                    <div class="col-md-12">
+                        <textarea title="Comentari" tabindex = "15" id="textareaComentari" cols="30" rows="5" class="form-control" placeholder="Comentari"
+                            aria-label="Comentari"></textarea>
+                    </div>
+                    <div class="col-md-12">
+                        <button tabindex = "16" type="submit" class="btn btn-dark btn-lg" value="Enviar">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+
+        <!-- BOTÓ PER ANAR AL TOP DE LA PÁGINA -->
+            <button tabindex = "17" type="button" class="scroll-to-top" value="Enviar">
+                <span class="flecha"></span>
+            </button>
+        
+
+        <!-- FOOTER -->
+        <footer class="bg-dark">
+            <p>&copy; 2021 Marta Córcoles Valle</p>
+        </footer>
+
+    </main>
+
+
+</body>
+
+</html>

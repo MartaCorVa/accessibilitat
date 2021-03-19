@@ -1,0 +1,301 @@
+/* 
+-------------------------------------------------------------------------------
+                                MENÚ
+------------------------------------------------------------------------------
+*/
+
+nav>a>img {
+    width: 40px;
+    margin-left: 10px;
+}
+
+/* 
+-------------------------------------------------------------------------------
+                                CAROUSEL
+------------------------------------------------------------------------------
+*/
+
+#carousel {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#demo {
+    margin: auto;
+    width: 70%;
+    height: 70%;
+}
+
+/* Make the image fully responsive */
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 
+-------------------------------------------------------------------------------
+                        SECCIÓ DE MILLORS JOCS
+------------------------------------------------------------------------------
+*/
+
+.lineaVertical {
+    border-left: 3px solid rgb(152, 153, 155);
+}
+
+.lineaHoritzontal {
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 3px solid rgb(152, 153, 155);
+}
+
+/* 
+-------------------------------------------------------------------------------
+                        SECCIÓ DE MILLORS JOCS
+------------------------------------------------------------------------------
+*/
+
+#millorsJocs {
+    width: 100%;
+    margin: auto;
+}
+
+#millorsJocs>div>article {
+    margin: 5px;
+}
+
+#millorsJocs>div>article>img {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#millorsJocs>div>article>h2 {
+    text-align: center;
+    color: black;
+}
+
+#millorsJocs>div>article>p {
+    text-align: center;
+    color: black;
+}
+
+/* 
+-------------------------------------------------------------------------------
+                                    DIV TITOL
+------------------------------------------------------------------------------
+*/
+
+.titolSeccio {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgb(152, 153, 155);
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    color: white;
+}
+
+/* 
+-------------------------------------------------------------------------------
+                        SECCIÓ DELS JOCS MÉS COMENTATS
+------------------------------------------------------------------------------
+*/
+
+/* PRIMER JOC */
+
+#primerJoc>div>img {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#primerJoc>div>p, #primerJoc>div>h2, #primerJoc>div>div {
+    width: 50%;
+    margin-right: auto;
+    display: block;
+}
+
+/* SEGON JOC */
+
+#segonJoc>div>img {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#segonJoc>div>p, #segonJoc>div>h2, #segonJoc>div>div {
+    width: 50%;
+    margin-left: auto;
+    display: block;
+}
+
+/* TERCER JOC */
+
+#tercerJoc>div>img {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#tercerJoc>div>p, #tercerJoc>div>h2, #tercerJoc>div>div {
+    width: 50%;
+    margin-right: auto;
+    display: block;
+}
+
+
+
+
+/* 
+-------------------------------------------------------------------------------
+                                    CONTACTE
+------------------------------------------------------------------------------
+*/
+
+#contacte {
+    margin: auto;
+    background-color: rgb(152, 153, 155);
+}
+
+#formulari {
+    padding: 20px;
+}
+
+#formulari>div>div {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+
+/* 
+-------------------------------------------------------------------------------
+                                BOTONS
+------------------------------------------------------------------------------
+*/
+
+button {  
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 10px;
+}
+
+
+
+/* 
+-------------------------------------------------------------------------------
+                                FOOTER
+------------------------------------------------------------------------------
+*/
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+/* 
+-------------------------------------------------------------------------------
+                    BOTÓ PER ANAR AL TOP DE LA PÁGINA
+------------------------------------------------------------------------------
+*/
+.scroll-to-top {
+    padding: 5px;
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    font-weight: bold;
+    width: 50px;
+    font-size: 0.8em;
+    text-align: center;
+    display: none;
+}
+
+.scroll-to-top:hover {
+    color: rgba(65, 56, 56, 0.329);
+}
+
+
+
+
+/* 
+    ICONA
+*/
+.flecha {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid;
+    transform: scale(var(--ggs,1));
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.418);
+    color: black;
+}
+
+.flecha::after,
+.flecha::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 7px
+}
+.flecha::after {
+    width: 15px;
+    height: 15px;
+    border-top: 4px solid;
+    border-left: 4px solid;
+    transform: rotate(45deg);
+    left: 11px
+}
+.flecha::before {
+    width: 4px;
+    height: 25px;
+    left: 16px;
+    background: currentColor
+}
+
+
+
+
+/* 
+-------------------------------------------------------------------------------
+                                MEDIA
+------------------------------------------------------------------------------
+*/
+
+@media only screen and (max-width:1000px) {
+    /* PRIMER JOC */
+    #primerJoc>div>p, #primerJoc>div>h2, #primerJoc>div>div {
+        width: 80%;
+        margin: auto;
+    }
+    /* SEGON JOC */
+    #segonJoc>div>p, #segonJoc>div>h2, #segonJoc>div>div {
+        width: 80%;
+        margin: auto;
+    }
+    /* TERCER JOC */
+    #tercerJoc>div>p, #tercerJoc>div>h2, #tercerJoc>div>div {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+.ocult  {
+    display: none;
+}

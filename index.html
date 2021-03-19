@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icons css.gg  https://css.gg/app -->
+    <link href='https://css.gg/css' rel='stylesheet'>
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/index.js"></script>
+
+    <script type="text/javascript">
+        window._mfq = window._mfq || [];
+        (function() {
+          var mf = document.createElement("script");
+          mf.type = "text/javascript"; mf.defer = true;
+          mf.src = "//cdn.mouseflow.com/projects/002c6d2b-7cb3-4c32-9f21-ce06f891f40b.js";
+          document.getElementsByTagName("head")[0].appendChild(mf);
+        })();
+      </script>
+
+    <!-- CSS PROPI -->
+    <link rel="stylesheet" href="css/index.css" />
+
+    <!-- TÍTOL -->
+    <title>Inici - Accessibilitat Web</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <!-- LOGO -->
+            <a tabindex = "1" class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="logo">
+            </a>
+
+            <!-- NAVEGACIÓ -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a tabindex = "2" class="nav-link" href="index.html">Inici</a>
+                </li>
+                <li class="nav-item">
+                    <a tabindex = "3" class="nav-link" href="tenda.html">Tenda</a>
+                </li>
+                <li class="nav-item">
+                    <a tabindex = "4" class="nav-link" href="joc.html">Joc</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- CAROUSEL -->
+        <section id="carousel">
+            <h1 tabindex = "5" class="titolSeccio">Jocs destacats</h1>
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <!-- INDICADORS DEL CAROUSEL -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+
+                <!-- IMATGES -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://i.blogs.es/b0ff31/horizon-zero-dawn-cabecera/1366_2000.jpg" alt="Horizon Zero Dawn"
+                            width="1100" height="500">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://wallpaperaccess.com/full/459659.jpg" alt="The Last Of Us" width="1100" height="500">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://media.redadn.es/imagenes/shadow-of-the-tomb-raider-pc-ps4-xbox-one_324539.jpg"
+                            alt="Shadow Of The Tomb Raider" width="1100" height="500">
+                    </div>
+                </div>
+
+                <!-- FLETXES DE NAVEGACIÓ -->
+                <a tabindex = "6" class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a tabindex = "7" class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- MILLORS JOCS -->
+        <section id="millorsJocs">
+            <h2 tabindex = "8" class="titolSeccio">Millors Jocs</h2>
+            <div class="row justify-content-center">
+                <!-- UN ARTICLE PER JOC -->
+                <article class="col">
+                    <img src="https://i.pinimg.com/originals/67/ed/54/67ed54f16e0cbc182217bb0b4d71c40f.jpg" alt="Minecraft"
+                        class="rounded-circle">
+                    <h2 tabindex = "9">Minecraft</h2>
+                    <p>
+                        Minecraft és un joc de món obert, per la qual cosa no posseeix un objectiu específic, permetent-li
+                        al jugador una gran llibertat quant a l'elecció de la seva manera de jugar. Malgrat això, el joc
+                        posseeix un sistema d'assoliments.
+                    </p>
+                </article>
+                <div id="linea1" class="lineaVertical"></div>
+                <article class="col">
+                    <img src="https://image.api.playstation.com/cdn/UP2456/PCSE01235_00/vSeGs4SCID8czSYNYkkxXRpEHs8yyJVT.png"
+                        alt="Stardew Valley" class="rounded-circle">
+                    <h2 tabindex = "10">Stardew Valley</h2>
+                    <p>
+                        Acabes d'heretar la vella parcel·la agrícola del teu padrí de Stardew Valley.
+                        Decideixes partir cap a una nova vida amb unes eines i pocs doblers.
+                        Et veus capaç de viure de la terra i convertir aquests camps descurats en
+                        una llar pròspera?
+                    </p>
+                </article>
+                <div id="linea2" class="lineaVertical"></div>
+                <article class="col">
+                    <img src="https://d26lpennugtm8s.cloudfront.net/stores/001/412/297/products/terraria-journeys-end1-842f2ccef857ab3eee16063386713458-1024-1024.png"
+                        alt="Terraria" class="rounded-circle">
+                    <h2 tabindex = "11">Terraria</h2>
+                    <p>
+                        Terraria és un videojoc d'acció, aventura i de sandbox produït de manera independent per l'estudi
+                        Re-Logic. Té característiques com ara l'exploració, l'artesania, la construcció d'estructures i el
+                        combat.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- JOCS MÉS COMENTATS -->
+        <section id="mesComentats">
+            <h2 tabindex = "12" class="titolSeccio">Jocs més comentats</h2>
+            <article class="row" id="primerJoc">
+                <div class="col-md-6">
+                    <img src="https://i.pinimg.com/originals/2c/91/a8/2c91a850d16731527d66769ac77a7a8c.jpg"
+                        alt="The Last Of Us">
+                </div>
+                <div class="col-md-6">
+                    <h2 tabindex = "13">The Last Of Us</h2>
+                    <p>D'acord amb la trama de The Last of Us, al setembre de 2013 es deslliga una pandèmia als
+                        Estats Units ocasionada per un cep del fong Cordyceps, que en infectar als humans els
+                        converteix en criatures caníbals, i que es transmet a través d'una simple mossegada. Enmig de la
+                        histèria col·lectiva, Joel (Troy Baker), la seva filla Sarah (Hana Hayes) i el seu germà
+                        Tommy (Jeffrey Pierce) abandonen la seva llar en els suburbis d'Austin, Texas per a evitar la
+                        infecció, però en el camí són interceptats per un oficial que assassina a Sarah en creure que
+                        està infectada.</p>
+                    <div>
+                        <button tabindex = "14" type="button" class="btn btn-dark btn-lg" value="Comprar">Comprar</button>
+                        <button tabindex = "15" type="button" class="btn btn-dark btn-lg" value="Veure més">Veure més</button>
+                    </div>
+                </div>
+            </article>
+
+            <div class="lineaHoritzontal"></div>
+
+            <article class="row" id="segonJoc">
+                <div id="horizonImgUp" class="col-md-6 ocult">
+                    <img src="https://images4.alphacoders.com/953/thumb-1920-953241.jpg" alt="Horizon Zero Dawn">
+                </div>
+                <div class="col-md-6">
+                    <h2 tabindex = "16">Horizon Zero Dawn</h2>
+                    <p>
+                        La història de Horizon Zero Dawn es projecta en el planeta Terra aproximadament 1000 anys en el
+                        futur, més precisament a l'any 3040, en un escenari post-apocalíptic on els éssers humans han
+                        tornat a l'època de les societats tribals primitives com a resultat d'una catàstrofe
+                        desconeguda. Amb el pas del temps, aquestes tribus van adoptar diferents costums, tradicions,
+                        interessos i creences. Les tres tribus més conegudes en el món de Horizon Zero Dawn són: Els
+                        Nora, Els Carja i Els Oseram.</p>
+                    <div>
+                        <button tabindex = "17" type="button" class="btn btn-dark btn-lg" value="Comprar">Comprar</button>
+                        <button tabindex = "18" type="button" class="btn btn-dark btn-lg" value="Veure més">Veure més</button>
+                    </div>
+                </div>
+                <div id="horizonImgDown" class="col-md-6">
+                    <img src="https://images4.alphacoders.com/953/thumb-1920-953241.jpg" alt="Horizon Zero Dawn">
+                </div>
+            </article>
+
+            <div class="lineaHoritzontal"></div>
+
+            <article class="row" id="tercerJoc">
+                <div class="col-md-6">
+                    <img src="https://store-images.s-microsoft.com/image/apps.7238.64022894035365111.18103873-401c-45fa-b2bd-57324e4bb3e9.bcc18314-fe5f-45e9-bb0a-e39888e90af3?mode=scale&q=90&h=1080&w=1920&format=jpg"
+                        alt="Shadow Of The Tomb Raider">
+                </div>
+                <div class="col-md-6">
+                    <h2 tabindex = "19">Shadow Of The Tomb Raider</h2>
+                    <p>La introducció del joc comença a la ciutat de Cozumel, Mèxic, on Lara busca pistes per a trobar
+                        un objecte mític a través d'informació que oculta La Trinitat, i és quan la troben, on acaba la
+                        introducció i se segueix amb la història principal.
+
+                        La història principal es desenvolupa a la ciutat oculta de Paititi, on la protagonista del joc,
+                        Lara Croft, intenta salvar al món d'apocalipsi Maia.
+
+                        En aquesta ocasió, Lara tornarà a enfrontar-se a la Trinitat i descobrirà la revelació que
+                        s'oculta després de la mort del seu pare, Richard Croft, donant lloc a un dels eslògans
+                        principals del joc “Become the Tomb Raider”, que dóna referència a convertir-se en la
+                        saquejadora de tombes o definir-se en qui és realment.</p>
+                    <div>
+                        <button tabindex = "20" type="button" class="btn btn-dark btn-lg" value="Comprar">Comprar</button>
+                        <button tabindex = "21" type="button" class="btn btn-dark btn-lg" value="Veure més">Veure més</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- FORMULARI DE CONTACTE -->
+        <section id="contacte">
+            <h2 tabindex = "22" class="titolSeccio">Contacte</h2>
+            <form id="formulari" action="#" class="container mx-auto">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <input title="Nom" tabindex = "23" type="text" class="form-control" placeholder="Nom" aria-label="Nom">
+                    </div>
+                    <div class="col-md-6">
+                        <input title="Llinatges" tabindex = "24" type="text" class="form-control" placeholder="Llinatges" aria-label="Llinatges">
+                    </div>
+                    <div class="col-md-12">
+                        <input title="Email" tabindex = "25" type="text" class="form-control" placeholder="Email" aria-label="Email">
+                    </div>
+                    <div class="col-md-12">
+                        <textarea title="Comentari" tabindex = "26" id="textareaComentari" cols="30" rows="5" class="form-control" placeholder="Comentari"
+                            aria-label="Comentari"></textarea>
+                    </div>
+                    <div class="col-md-12">
+                        <button tabindex = "27" type="submit" class="btn btn-dark btn-lg" value="Enviar">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+
+        <!-- BOTÓ PER ANAR AL TOP DE LA PÁGINA -->
+        <button tabindex = "28" type="button" class="scroll-to-top" value="Enviar">
+            <span class="flecha"></span>
+        </button>
+
+        <!-- FOOTER -->
+        <footer class="bg-dark">
+            <p>&copy; 2021 Marta Córcoles Valle</p>
+        </footer>
+
+    </main>
+
+
+</body>
+
+</html>
